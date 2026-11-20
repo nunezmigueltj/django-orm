@@ -1,12 +1,10 @@
-# Django ORM Practice
+# Django ORM & Backend Development
 
 ## Overview
 
-This project focuses on learning and practicing Django through a practical inventory management application.
+This project implements a Django-based inventory application focused on backend development, relational data modeling, and database operations through Django ORM.
 
-The main goal is to strengthen Python backend development skills by working with Django models, database relationships, ORM queries, and query optimization.
-
-The project uses a simple inventory system to simulate real-world database operations.
+It covers model design, database relationships, data retrieval, query filtering, and query optimization using practical inventory management scenarios.
 
 ## Technologies
 
@@ -15,6 +13,62 @@ The project uses a simple inventory system to simulate real-world database opera
 - SQLite
 - Django ORM
 - Git and GitHub
+
+## Application Structure
+
+The application currently contains an inventory module with two main models:
+
+### Categoria
+
+Stores product category information.
+
+- nombre
+
+### Producto
+
+Stores inventory product information.
+
+- nombre
+- precio
+- stock
+- categoria (ForeignKey)
+
+### Database Relationships
+
+- One category can have multiple products.
+- Each product belongs to one category.
+- The relationship is implemented using Django's ForeignKey field.
+
+## Technical Implementation
+
+The project covers the following areas:
+
+- Django project and application architecture.
+- Virtual environments and dependency management.
+- Django models and database migrations.
+- Relational data modeling.
+- ForeignKey relationships.
+- Django ORM and QuerySets.
+- Data filtering and exclusion.
+- Object retrieval and existence checks.
+- Query ordering.
+- Related object lookups.
+- Query optimization using `select_related()`.
+- N+1 query problem and performance considerations.
+
+## ORM Operations
+
+The application includes implementations involving:
+
+- Retrieving records using `all()`.
+- Filtering records using `filter()`.
+- Excluding records using `exclude()`.
+- Retrieving individual objects using `get()`.
+- Checking record existence using `exists()`.
+- Searching text using `icontains`.
+- Filtering related models.
+- Accessing reverse relationships using `related_name`.
+- Optimizing ForeignKey queries using `select_related()`.
 
 ## Project Structure
 
@@ -37,60 +91,6 @@ django-orm/
 ├── requirements.txt
 └── README.md
 ```
-
-## Database Structure
-
-The application currently contains two main models:
-
-### Categoria
-
-Stores product categories.
-
-- nombre
-
-### Producto
-
-Stores inventory products.
-
-- nombre
-- precio
-- stock
-- categoria (ForeignKey)
-
-### Relationships
-
-- One category can have multiple products.
-- Each product belongs to one category.
-- The relationship is implemented using Django's ForeignKey field.
-
-## Topics Covered
-
-- Django project and application structure.
-- Virtual environments and dependency management.
-- Django models.
-- Database migrations.
-- ForeignKey relationships.
-- Django ORM fundamentals.
-- QuerySets.
-- Filtering and excluding records.
-- Ordering query results.
-- Related object lookups.
-- `filter()`, `exclude()`, `get()` and `exists()`.
-- `select_related()` for query optimization.
-- Understanding the N+1 query problem.
-
-## ORM Practice
-
-The project includes practical exercises involving:
-
-- Retrieving all products.
-- Filtering products by price and stock.
-- Searching products using `icontains`.
-- Ordering products by price.
-- Excluding products based on category.
-- Accessing related objects.
-- Checking for existing records.
-- Optimizing queries using `select_related()`.
 
 ## Project Setup
 
@@ -131,22 +131,24 @@ py manage.py migrate
 py manage.py runserver
 ```
 
-## Progress
+## Project Status
 
 **Status: In Progress**
 
-Currently completed:
+Currently implemented:
 
-- Django project setup.
-- Inventory application creation.
+- Django project configuration.
+- Inventory application.
 - Category and Product models.
 - Database migrations.
-- Sample data insertion.
 - ForeignKey relationships.
-- Basic Django ORM queries.
+- Sample data management.
+- Django ORM queries.
 - Related object lookups.
 - Query optimization with `select_related()`.
 
 ## Purpose
 
-This project is part of my continuous learning process to strengthen my Python backend development skills.
+This project demonstrates practical backend development concepts using Django, with an emphasis on database-driven application development, ORM operations, and query performance.
+
+It provides a foundation for implementing more advanced backend features and expanding the application's functionality.
