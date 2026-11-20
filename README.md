@@ -149,4 +149,4 @@ Currently completed:
 
 ## Purpose
 
-This project is part of my continuous learning process to strengthen my Python backend development skills and gain practical experience building database-driven applications with Django.
+This project is part of my continuous learning process to strengthen my Python backend development skills.
