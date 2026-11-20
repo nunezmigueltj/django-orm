@@ -19,7 +19,7 @@ The project uses a simple inventory system to simulate real-world database opera
 ## Project Structure
 
 ```text
-django-orm-practice/
+django-orm/
 │
 ├── config/
 │   ├── settings.py
@@ -97,13 +97,13 @@ The project includes practical exercises involving:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/nunezmigueltj/django-orm-practice.git
+git clone https://github.com/nunezmigueltj/django-orm.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd django-orm-practice
+cd django-orm
 ```
 
 3. Create and activate a virtual environment:
